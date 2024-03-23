@@ -9,7 +9,7 @@
       "name": "gg_log.dart",
       "type": "dart",
       "request": "launch",
-      "program": "${workspaceFolder}/bin/gg_log.dart",
+      "program": "${workspaceFolder}/example/gg_log_example.dart",
       "args": ["--param", "value"],
       "console": "debugConsole"
     },

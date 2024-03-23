@@ -4,22 +4,10 @@
 // Use of this source code is governed by terms that can be
 // found in the LICENSE file in the root of this package.
 
-import 'package:args/command_runner.dart';
-import './commands/my_command.dart';
+/// GgLog is a function that logs a message.
+typedef GgLog = void Function(String message);
 
-/// The command line interface for GgLog
-class GgLog extends Command<dynamic> {
-  /// Constructor
-  GgLog({required this.log}) {
-    addSubcommand(MyCommand(log: log));
-  }
-
-  /// The log function
-  final void Function(String message) log;
-
-  // ...........................................................................
-  @override
-  final name = 'ggLog';
-  @override
-  final description = 'Add your description here.';
-}
+/// An implementation of [GgLog] that logs to the console.
+GgLog testGgLog = (String message) {
+  print('GgLog: $message');
+};
