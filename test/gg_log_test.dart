@@ -22,7 +22,7 @@ void main() {
           code: () {
             testGgLog('Hello, World!');
           },
-          log: messages.add,
+          ggLog: messages.add,
         );
 
         expect(messages, ['GgLog: Hello, World!']);
