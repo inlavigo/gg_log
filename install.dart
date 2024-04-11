@@ -11,8 +11,6 @@ library;
 
 import 'dart:io';
 
-import 'package:colorize/colorize.dart';
-
 // #############################################################################
 void main() {
   const exe = 'ggLog';
@@ -30,7 +28,7 @@ void main() {
   final result = Process.runSync('dart', ['compile', 'exe', src, '-o', dest]);
 
   if (result.stderr.toString().trim().isNotEmpty) {
-    print('❌ ${Colorize(result.stderr.toString()).red()}');
+    print('❌ ${result.stderr}');
   }
-  print(Colorize('✅ Installed $exe in $dest').green());
+  print('✅ Installed $exe in $dest');
 }

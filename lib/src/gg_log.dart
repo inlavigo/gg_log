@@ -8,6 +8,9 @@
 typedef GgLog = void Function(String message);
 
 /// An implementation of [GgLog] that logs to the console.
-GgLog testGgLog = (String message) {
+void testGgLog(
+  String message, {
+  void Function(String) print = print,
+}) {
   print('GgLog: $message');
-};
+}
