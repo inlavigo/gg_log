@@ -1,6 +1,6 @@
 name: gg_log
 description: Helpers for logging, e.g. a GgLog typedef used in many of our projects.
-version: 1.0.6
+version: 1.0.7
 repository: https://github.com/inlavigo/gg_log.git
 
 environment:
